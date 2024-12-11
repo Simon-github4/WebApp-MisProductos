@@ -19,7 +19,7 @@ import data.service.ClienteRestProductos;
 import jakarta.annotation.PostConstruct;
 
 @PageTitle("Productos")
-@Route(value = "", layout = MainLayout.class)
+@Route(value = "productos", layout = MainLayout.class)
 public class ProductosView extends VerticalLayout {
     Grid<Producto> grid = new Grid<>(Producto.class);
     TextField filterText = new TextField();
